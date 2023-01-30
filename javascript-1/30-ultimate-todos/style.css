@@ -1,0 +1,17 @@
+p.error {
+	color: green;
+}
+
+div.error {
+	color: red;
+}
+
+span.secret {
+	display: none;
+}
+
+#completed li {
+	color: #aaa;
+	text-decoration: line-through;
+}
+

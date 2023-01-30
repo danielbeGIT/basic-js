@@ -1,0 +1,134 @@
+/* General */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Quiz section */
+.quiz-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.quiz-image {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.quiz-image img {
+    width: 70%;
+}
+
+/* Buttons */
+.answer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnStyle {
+    margin: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: lightblue;
+    font-size: 1.2rem;
+    border: 3px solid black;
+}
+
+.btnStyle:hover {
+    transition: 0.3s;
+    border-color: blue;
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: lightblue;
+    font-size: 1.3rem;
+    border: 3px solid black;
+}
+
+.controls button:hover {
+    transition: 0.5s;
+    border-color: red;
+}
+
+
+/* Media query md */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .answer-container {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .quiz-image img {
+        width: 50%;
+    }
+
+    .answer-container {
+        margin: 30px;
+    }
+
+    .answer-container button{
+        border-radius: 20px;
+        padding: 5px;
+    }
+    
+    .start-container button {
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+
+
+/* Media query lg */
+@media only screen and (min-width: 1100px) {
+    .container {
+        width: 50%;
+    }
+    .quiz-image img {
+        width: 60%;
+    }
+}

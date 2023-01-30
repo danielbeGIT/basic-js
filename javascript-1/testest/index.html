@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Quiz section starts here! -->
+        <div id="quiz-container" class ="hide">
+            <div class="results-container hide">
+                <li>dsa</li>
+                <li>dsasa</li>
+                <li>dsadas</li>
+            </div>
+            <!-- Quiz heading -->
+            <div class="quiz-title">Who is this?</div>
+            <!-- Results -->
+            <div id="highscore"></div>
+            <!-- Image to guess -->
+            <div id="question" class="quiz-image">
+                <img src="" alt="images">
+            </div>
+            <!-- Answer buttons -->
+            <div id="answer-btns" class="answer-container">
+                <button class="btnStyle"></button>
+                <button class="btnStyle"></button>
+                <button class="btnStyle"></button>
+                <button class="btnStyle"></button>
+            </div>
+        </div>
+        <!-- Important buttons -->
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start</button>
+            <button id="result-btn" class="result-btn hide">Result</button>
+            <button id="reset-btn" class="reset-btn hide">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
